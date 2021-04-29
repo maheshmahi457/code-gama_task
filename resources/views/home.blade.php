@@ -11,20 +11,20 @@
     <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 </head>
 
 <body>
     <form action="./inputTag" method="GET">
-    @csrf
+        @csrf
         <select name="tag_name">
             @foreach ($tags as $tag)
             <option value="{{$tag['tag_name']}}">{{$tag['tag_name']}}</option>
             @endforeach
-        </select>   
+        </select>
         <input type="submit" />
     </form>
-    
+
 </body>
 
 </html>

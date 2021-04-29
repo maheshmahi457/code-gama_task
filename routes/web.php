@@ -1,8 +1,5 @@
 <?php
 
-use App\Models\Tags;
-use App\Http\Controllers\MainController;
-use App\Models\Statastics;
 use Illuminate\Support\Facades\Route;
 
 /*

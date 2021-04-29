@@ -15,18 +15,18 @@
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
     <link rel="stylesheet" href="">
     <style>
-        html, body, #container {
+        html,
+        body,
+        #container {
             width: 95%;
             height: 95%;
             margin: 0;
             padding: 0;
-    }
+        }
 
-a{
-    text-align: center;
-    font-size: 20px;
-}
-
+        a {
+            font-size: 20px;
+        }
     </style>
     <script>
         anychart.onDocumentReady(function() {
@@ -49,10 +49,9 @@ a{
 </head>
 
 <body>
-<a href="<?php echo url('home')?>" >Back</a>    
+    <a href="<?php echo url('home') ?>">Back</a>
     <div id="container"></div>
 
-    
 </body>
 
 </html>
