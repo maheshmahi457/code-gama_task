@@ -34,12 +34,9 @@ a{
             var data = <?php echo json_encode($result); ?>;
             // create the chart
             var chart = anychart.pie();
-
             // set the chart title
-            // let str1 = <?php echo $tagName; ?>;
-            // let str2 = 'Stack Overflow Statastics on ';
-            // var res = str1.concat(str2);
-            // chart.title(res);
+            var str = 'Stack Overflow Statastics on ' + '<?php echo $tagName; ?>';
+            chart.title(str);
 
             // add the data
             chart.data(data);
