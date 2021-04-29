@@ -20,6 +20,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('home', [MainController::class,'home']);
-Route::post('/insertData', [MainController::class,'insertData']);
-Route::post('/insertTag', [MainController::class,'insertTag']);
 Route::get('inputTag', [MainController::class,'display']);

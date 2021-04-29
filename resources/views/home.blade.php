@@ -15,29 +15,6 @@
 </head>
 
 <body>
-    <!-- <form action="./insertData" method="POST">
-        @csrf
-        <select name="tags_id" id="cars">
-            @foreach ($tags as $tag)
-            <option value="{{$tag['tag_name']}}">{{$tag['tag_name']}}</option>
-            @endforeach
-        </select>
-        <input type="text" placeholder="Question" name="questions" />
-        <input type="text" placeholder="Answers" name="answers" />
-        <input type="text" placeholder="Accepted Questions" name="que_accepted" />
-        <input type="text" placeholder="Voted Questions" name="que_voted" />
-        <input type="text" placeholder="Voted Answers" name="ans_voted" />
-        <input type="text" placeholder="Questions viewed" name="que_viewed" />
-        <input type="text" placeholder="Comments" name="comments" />
-        <br>
-        <input type="submit" />
-    </form>
-
-    <form action="./insertTag" method="POST">
-        @csrf
-        <input type="text" placeholder="Tag" name="tag_name" />
-        <input type="submit" />
-    </form> -->
     <form action="./inputTag" method="GET">
     @csrf
         <select name="tag_name">

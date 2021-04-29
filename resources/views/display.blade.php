@@ -36,10 +36,10 @@ a{
             var chart = anychart.pie();
 
             // set the chart title
-            let str1 = <?php echo $tagName; ?>;
-            let str2 = 'Stack Overflow Statastics on ';
-            var res = str1.concat(str2);
-            chart.title(res);
+            // let str1 = <?php echo $tagName; ?>;
+            // let str2 = 'Stack Overflow Statastics on ';
+            // var res = str1.concat(str2);
+            // chart.title(res);
 
             // add the data
             chart.data(data);

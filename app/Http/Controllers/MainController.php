@@ -9,20 +9,6 @@ use DB;
 
 class MainController extends Controller
 {
-    public function insertData(Request $request){
-        $data = $request->all();
-        $objTag = new Tags;
-        $tagName = $objTag->select('id')->where('tag_name',$data['tags_id'])->first();
-        $data['tags_id'] = $tagName->id;
-        $result = Statastics::create($data);
-        if($result) return redirect('/home')->with('inserted tag successfully');
-    }
-
-    public function insertTag(Request $request){
-        $data = $request->all();
-        $result = Tags::create($data);
-        if($result) return redirect('/home')->with('inserted tag successfully');
-    }
 
     public function display(Request $request){
         $objStats = new Statastics();
